@@ -1,14 +1,14 @@
 
 //export function power() {
     return Math.pow(num1, num2) ;
-}
+
 //export function modulus() {
     return num2 % num1 ;
-}
+
 
 //export function incrementNum1() {
     num1 += 1 ;
-}
+
 //export function decrementNum2() {
 
 //

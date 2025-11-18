@@ -13,6 +13,7 @@ function computeGRade(grade){
  
     if(grade >=94.5){
         console.log("1");
+    
 
     } else if (grade >=91.5){
         console.log("1.25");
