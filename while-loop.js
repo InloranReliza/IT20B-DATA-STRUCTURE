@@ -1,4 +1,4 @@
-/*
+//desc
 
 i=5
 
@@ -7,7 +7,7 @@ while   (i>=1){
     i--;
 }
 
-
+//asc
 i=1;
 
 while (i<=5){
@@ -17,6 +17,7 @@ while (i<=5){
  
 
 output = "";
+//desc
 i=1;
 
 while (i<=5){
@@ -38,10 +39,11 @@ while (i>=1){
     i--;
 }
 console.log(output);
-*/
+
 
 arr= [4,2,3];
 output = "";
+
 i=0;
 
 while(i<=arr.length-1){
