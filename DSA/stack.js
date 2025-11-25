@@ -23,7 +23,7 @@ class Stack{
     is_empty(){
         return this.topindex === -1;
     }
- size(){
+    size(){
         return this.topindex + 1;
     }
 
