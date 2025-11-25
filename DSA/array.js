@@ -76,7 +76,7 @@ class Array {
     }
     //false
     console.log(element + " is not found at any index");   
-    return;
+    return-1;
     }
 
 
