@@ -22,13 +22,50 @@ class Array {
     }
     
 }
+    insert(index, element){
+    //correcting index
+    if(index <0 || index > this.length){
+        console.log("Invalid index");
+        return;
+    }
+
+    //shifting condition
+    for(let i=this.length; i>index; i--){
+        this.data[i] = this.data[i-1];
+    }
+
+    //after condition
+    this.data[index] = element;
+    this.length++;
+}
+    delete(index){
+
+    //correcting statement || must be false
+    if(index <0 || index >= this.length){
+        console.log("Invalid index");
+        return;
+    }
+
+    //shifting condition
+    for(let i=index; i<this.length-1; i++){
+        this.data[i] = this.data[i+1];
+    }
+
+    //after condition
+    delete this.data[this.length-1];
+    this.length--;
+}
+
+
+
+
 
 //
-
 arr1= new Array([4,2,3]);
 
 arr1.traverse();
-
+arr1.insert(0,9);
+arr1.traverse();
 
 
 
