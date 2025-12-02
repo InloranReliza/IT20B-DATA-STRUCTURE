@@ -29,9 +29,22 @@ class Queue{
             if (this.is_empty()) return null;
             return this.data[this.frontIndex];
         }
-}
-//
+        size(){
+            return this.rearIndex - this.frontIndex +1;
+        }
 
+        dequeue(){
+            //Correction Statement
+            if(this.is_empty()) return null;
+
+            const value = this.data[this.frontIndex];
+            delete this.data[this.frontIndex];
+            this.frontIndex++;
+            return value;
+        }
+}
+
+//
 let queue1 = new Queue();
 console.log(queue1.is_empty());
 queue1.enqueue(4);
