@@ -49,8 +49,8 @@ class LinkedList{
             let current = this.head;{
 
                 while(current){
-                    if(current.value === target){
-                        const node = new Node(element);
+                    if(current.value === target)
+                        constnode = new Node(element);
                         node.next = current.next;
                         current.next = node;
                         return;
@@ -61,9 +61,21 @@ class LinkedList{
                 }
 
                 console.log("Target not found");
-            }
+            
+                    search (element){
+                let current = this.head;
+
+              while(current){
+            if(current.value === elememt)
+                return "Element found";
+                current= current.next;
+            
+             
+        }
+       
+        return "Element not found";
+    }
 }
-         }
 
 
   let list1 = new LinkedList();
@@ -73,5 +85,6 @@ class LinkedList{
   console.log(list1.traverse());
   list1.insert_after(4,17);
   console.log(list1.traverse());
+  console.log(list1.search(1));
   
   
