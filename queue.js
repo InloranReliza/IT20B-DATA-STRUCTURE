@@ -20,6 +20,26 @@ class Queue{
             return output;
         }
         
+        is_empty(){
+            return this.frontIndex > this.rearIndex;
+
+        }
+        front(){
+            //correction Statement
+            if (this.is_empty()) return null;
+            return this.data[this.frontIndex];
+        }
 }
+//
 
 let queue1 = new Queue();
+console.log(queue1.is_empty());
+queue1.enqueue(4);
+console.log("The current queue size is: "+ queue1.size());
+queue1.enqueue(2);
+console.log("The current queue size is: "+ queue1.size());
+queue1.enqueue(3);
+console.log("The current queue size is: "+ queue1.size());
+console.log(queue1.is_empty());
+console.log(queue1.front());
+
