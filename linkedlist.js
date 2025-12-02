@@ -30,5 +30,46 @@ class LinkedList{
         return output;
       }
 
+      insert_at_end(element){
+        const node = new Node(element);
+
+        if(!this.head){
+            this.head = node;
+            return;
+        }
+
+        let current = this.head;
+
+        while(current.next){
+            current = current.next;
+      }
+        current.next = node;
+           }
+         insert_after(target,element){
+            let current = this.head;{
+
+                while(current){
+                    if(current.value === target){
+                        const node = new Node(element);
+                        node.next = current.next;
+                        current.next = node;
+                        return;
+                    
+                    }
+                    current = current.next;
+
+                }
+
+                console.log("Target not found");
+            }
 }
- 
+         }
+
+
+  let list1 = new LinkedList();
+  list1.insert_at_beginning(4);
+  list1.insert_at_beginning(2);
+  list1.insert_at_beginning(3);
+  console.log(list1.traverse());
+  
+  
